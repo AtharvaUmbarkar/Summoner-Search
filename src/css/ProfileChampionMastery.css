@@ -1,0 +1,46 @@
+.pr-champs-item {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.pr-champ-image {
+  width: clamp(2.5rem, 10vw, 5rem);
+  height: clamp(2.5rem, 10vw, 5rem);
+  border: 2px solid var(--bg-primary);
+  border-radius: 1rem;
+}
+
+.pr-mastery-image {
+  width: clamp(2.5rem, 10vw, 5rem);
+  height: clamp(2.5rem, 10vw, 5rem);
+}
+
+.pr-champ-name {
+  font-family: "Ubuntu";
+  font-size: min(5vw, 1.2rem);
+  min-width: fit-content;
+  width: clamp(5rem, 10vw, 6rem);
+  margin-left: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.pr-champ-lvl-points-wrapper {
+  margin-left: min(1rem, 2vw);
+  display: flex;
+  flex-flow: column;
+  font-family: "Ubuntu";
+  font-size: min(4vw, 0.9rem);
+}
+
+.pr-champ-lvl-points-wrapper > div > p:nth-child(2) {
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+
+.pr-champ-level, .pr-champ-points {
+  display: flex;
+  flex-flow: row;
+}
+

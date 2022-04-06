@@ -1,0 +1,131 @@
+.profile-info {
+  width: 100%;
+  min-height: 10rem;
+  color: var(--clr-content-1);
+}
+
+.pr-list {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 100%;
+  padding: clamp(0.75rem, 3vw, 1.5rem);
+}
+.pr-stats {
+  display: flex;
+  flex-flow: column;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 2rem;
+}
+
+.pr-account-wrapper {
+  display: flex;
+}
+
+.pr-icon-wrapper {
+  border: 3px solid var(--clr-content-7);
+  width: clamp(6rem, 10vw, 10rem);
+  height: clamp(6rem, 10vw, 10rem);
+}
+
+.pr-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.pr-name-level-rank-wrapper {
+  padding-left: 0.5rem;
+  font-family: "Baloo Bhai 2", cursive;
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  align-self: center;
+  flex-grow: 1;
+}
+
+.pr-name-level-rank-wrapper > div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.pr-name-level-rank-wrapper div > p:nth-child(1) {
+  width: clamp(3rem, 6vw, 4.5rem);
+}
+
+.pr-summoner-name > p:nth-child(2),
+.pr-summoner-level > p:nth-child(2) {
+  display: inline;
+  color: var(--clr-content-0);
+  font-weight: 600;
+}
+
+.pr-summoner-rank > p:nth-child(2) {
+  font-weight: 600;
+}
+
+.pr-ranked-wrapper {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.pr-ranked-emblem-image {
+  width: clamp(6rem, 10vw, 10rem);
+  height: clamp(6rem, 10vw, 10rem);
+  border: 3px dashed;
+  border-radius: 1rem;
+  background-color: var(--bg-primary);
+}
+
+.pr-ranked-emblem-stats-wrapper {
+  display: flex;
+  flex-flow: row;
+}
+
+.pr-ranked-stats {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Ubuntu";
+  font-size: clamp(0.7rem, 3vw, 1.2rem);
+  margin-left: 1rem;
+}
+
+.pr-ranked-stats-item {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: min(1rem, 2vw);
+  /* width: clamp(8rem, 13vw, 12rem); */
+}
+
+.pr-ranked-stats-item > p:nth-child(1) {
+  width: clamp(6rem, 23vw, 12rem);
+}
+
+.pr-ranked-stats-item > p:nth-child(2) {
+  color: var(--clr-content-0);
+}
+
+.pr-champs {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.pr-title {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-family: "Ubuntu";
+  color: var(--clr-content-0);
+  align-self: center;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}

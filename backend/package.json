@@ -1,0 +1,19 @@
+{
+  "name": "summoner-search-backend",
+  "version": "1.0.0",
+  "description": "This is the backend for the Summoner Search Website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Atharva Umbarkar",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "cors": "^2.8.5",
+    "ddragon-api": "^1.0.3",
+    "express": "^4.17.3",
+    "leagueapiwrapper": "^2.5.0",
+    "request-promise": "^4.2.6"
+  }
+}

@@ -1,0 +1,66 @@
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-primary: #24283b;
+  --bg-secondary: #1f2335;
+  --bg-tertiary: #2a2f45;
+
+  --underline-primary: #1b1e2e;
+
+  --clr-content-0: #c0caf5;
+  --clr-content-1: #a9b1d6;
+  --clr-content-2: #79828f;
+  --clr-content-3: #7aa2f7;
+  --clr-content-4: #2ac1de;
+  --clr-content-5: #73daca;
+  --clr-content-6: #9ece6a;
+  --clr-content-7: #e0af68;
+  --clr-content-8: #ff9e64;
+  --clr-content-9: #f77684;
+  --clr-content-10: #f75e60;
+
+  /* --clr-rank-unranked:#c0caf5;
+  --clr-rank-iron: #8D8B8B;
+  --clr-rank-bronze: #BF9062;
+  --clr-rank-silver: #849DA6;
+  --clr-rank-gold: #E5B55B;
+  --clr-rank-platinum: #3D7877;
+  --clr-rank-diamond: #886CE2;
+  --clr-rank-master: #8E5EB1;
+  --clr-rank-grandmaster: #DD1310;
+  --clr-rank-challenger: #1CA5FC; */
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  background-color: var(--bg-tertiary);
+}
+
+#root {
+  display: flex;
+  flex-flow: column;
+}
+.nav-wrapper {
+  position: sticky;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+}
+
+.alert-wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  flex-grow: 1;
+}
