@@ -21,10 +21,15 @@
 
 .nav-menu {
   position: fixed;
-  height: 100%;
-  width: 100%;
   transition-property: width;
-  transition-duration: 5s;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in-out;
+}
+
+.nav-menu-list {
+  transition-property: opacity;
+  transition-delay: 70ms;
+  transition-duration: 10ms;
   transition-timing-function: ease-in-out;
 }
 
