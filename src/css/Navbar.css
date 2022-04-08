@@ -12,6 +12,22 @@
   justify-content: flex-start;
 }
 
+.nav-menu-button {
+  display: none;
+  margin: 0.5rem;
+  padding: 0.25rem;
+  z-index: 100;
+}
+
+.nav-menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  transition-property: width;
+  transition-duration: 5s;
+  transition-timing-function: ease-in-out;
+}
+
 .nav-logo {
   display: flex;
   align-items: center;
@@ -20,7 +36,7 @@
 }
 
 .nav-logo img {
-  height: clamp(3rem, 5vw, 3.5rem);
+  height: clamp(2.5rem, 4vw, 3rem);
   padding-top: 0.25rem;
 }
 
@@ -29,8 +45,8 @@
   align-items: center;
   justify-content: flex-start;
   height: 80%;
-  font-size: clamp(1.5rem, 2.5vw, 3rem);
-  color: var(--clr-content-4);
+  font-size: clamp(1rem, 2.5vw, 2.5rem);
+  color: var(--clr-content-3);
   font-family: 'Noto Sans', sans-serif;
   font-weight: bolder;
   text-align: center;
@@ -47,6 +63,7 @@
   display: flex;
   flex-flow: row;
   align-items: center;
+  margin-inline: 0.5rem;
 }
 
 .nav-item {
@@ -68,7 +85,7 @@
 }
 
 .nav-list > .nav-item:first-child {
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .nav-item-active {
@@ -76,8 +93,14 @@
   color: var(--clr-content-3);
 }
 
-@media only screen and (max-width: 675px) {
+@media only screen and (max-width: 750px) {
   .nav-list {
     display: none;
+  }
+  .nav-menu-button {
+    display: block;
+  }
+  .nav-logo {
+    padding: 0 0.75em 0 0;
   }
 }

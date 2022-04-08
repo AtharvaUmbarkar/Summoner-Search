@@ -22,7 +22,6 @@ const MainStats = (props) => {
   const summonerLevel = summonerStats.summonerLevel;
 
   const profileIconLink = summonerName ? `https://cdn.communitydragon.org/${cdragon_patch}/profile-icon/${profileIconId}` : undefined;
-  console.log(matchHistory);
 
   useEffect(() => {
     if (!summonerName || isEmpty(summonerStats)) navigate("/home");

@@ -1,3 +1,7 @@
+.match-info {
+  width: clamp(2.5rem, 7vw, 3.5rem);
+}
+
 .match-info-type {
   font-size: clamp(0.825rem, 2.25vw, 1.125rem);
   line-height: clamp(1rem, 1vw, 1.25rem);
@@ -14,8 +18,8 @@
 }
 
 .match-main-champ-img {
-  height: clamp(2.5rem, 8vw, 5rem);
-  width: clamp(2.5rem, 8vw, 5rem);
+  height: clamp(2.5rem, 6vw, 4rem);
+  width: clamp(2.5rem, 6vw, 4rem);
 }
 
 .match-kda-wrapper {
@@ -33,7 +37,7 @@
 }
 
 .match-level-wrapper {
-  width: clamp(5rem, 7vw, 7rem);
+  width: clamp(4rem, 7vw, 7rem);
   font-size: clamp(0.625rem, 1.25vw, 1rem);
   line-height: clamp(0.825rem, 1.5vw, 1.5rem);
 }
@@ -48,9 +52,17 @@
   width: clamp(1.5rem, 3vw, 2.75rem);
 }
 
-.match-team-champ-img {
-  height: clamp(0.75rem, 8vw, 1.5rem);
-  width: clamp(0.75rem, 8vw, 1.5rem);
+.match-members {
+  width: clamp(5rem, 18vw, 10rem);
+}
+
+.match-member-img {
+  height: clamp(0.75rem, 2.5vw, 1.5rem);
+  width: clamp(0.75rem, 2.5vw, 1.5rem);
+}
+
+.match-member-name {
+  font-size: clamp(0.5rem, 1vw, 0.75rem);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -59,4 +71,27 @@
     align-items: flex-start;
     justify-content: center;
   }
-} 
+}
+
+@media only screen and (max-width: 750px) {
+  .match {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .match-info {
+    flex-direction: row;
+    width: clamp(10rem, 10vw, 15rem);
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+  }
+  .match-items {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .match-members-wrapper {
+    margin-top: 0.25rem;
+  }
+}

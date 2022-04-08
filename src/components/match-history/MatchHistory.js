@@ -4,9 +4,10 @@ import { isEmpty } from 'lodash';
 
 import SummonerContext from '../../context/summoner/SummonerContext';
 import Match from './Match';
-import "../../css/MatchHistry.css"
+import "../../css/MatchHistory.css"
 
 const MatchHistory = () => {
+  document.body.style.height = "unset";
   const navigate = useNavigate();
   const { summonerName, matchHistory } = useContext(SummonerContext);
 

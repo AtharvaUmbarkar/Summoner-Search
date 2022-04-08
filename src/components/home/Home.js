@@ -7,6 +7,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import SummonerContext from '../../context/summoner/SummonerContext';
 
 const Home = (props) => {
+  document.body.style.height = "100%";
   const navigate = useNavigate();
   const { fetchSummonerInfo, fetchMatchHistory } = useContext(SummonerContext);
   const [summonerName, setSummonerName] = useState("");
@@ -22,7 +23,6 @@ const Home = (props) => {
       props.setLoadingProgress(100);
       setSummonerName("");
       if (infoResp.success && matchResp.success) {
-        // props.showAlert("Success", "success");
         navigate('/main_stats');
       }
       else {
