@@ -22,12 +22,13 @@
 
 .pr-account-wrapper {
   display: flex;
+  align-items: center;
 }
 
 .pr-icon-wrapper {
   border: 3px solid var(--clr-content-7);
-  width: clamp(6rem, 10vw, 10rem);
-  height: clamp(6rem, 10vw, 10rem);
+  width: clamp(4rem, 10vw, 6rem);
+  height: clamp(4rem, 10vw, 6rem);
 }
 
 .pr-icon {
@@ -73,8 +74,8 @@
 }
 
 .pr-ranked-emblem-image {
-  width: clamp(6rem, 10vw, 10rem);
-  height: clamp(6rem, 10vw, 10rem);
+  width: clamp(4rem, 10vw, 6rem);
+  height: clamp(4rem, 10vw, 6rem);
   border: 3px dashed;
   border-radius: 1rem;
   background-color: var(--bg-primary);

@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className={`nav-menu ${menuOpen ? 'w-full' : 'w-0'} h-full absolute backdrop-blur-sm bg-opacity-70 bg-clrBackground-1`}>
+      <div className={`nav-menu ${menuOpen ? 'w-full' : 'w-0'} h-full  backdrop-blur-sm bg-opacity-70 bg-clrBackground-1`}>
         <div className='flex flex-row h-full w-full'>
           <div className='h-full w-1/2 bg-clrBackground-1 bg-opacity-100'>
             <ul className={`text-clrContent-0 mt-14 mx-4 space-y-2 text-sm flex flex-col justify-evenly items-start ${menuOpen ? 'visible opacity-100' : 'invisible opacity-0'} nav-menu-list`}>

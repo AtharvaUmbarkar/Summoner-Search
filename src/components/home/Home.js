@@ -17,10 +17,13 @@ const Home = (props) => {
     if (summonerName) {
       props.setLoadingProgress(20);
       console.log("Submitted Name: " + summonerName);
-      const infoResp = await fetchSummonerInfo(summonerName);
-      props.setLoadingProgress(50);
-      const matchResp = await fetchMatchHistory(summonerName);
+      const resp1 = fetchSummonerInfo(summonerName);
+      const resp2 = fetchMatchHistory(summonerName);
+      const resp = await Promise.all([resp1, resp2]);
       props.setLoadingProgress(100);
+      const infoResp = resp[0];
+      const matchResp = resp[1];
+
       setSummonerName("");
       if (infoResp.success && matchResp.success) {
         navigate('/main_stats');

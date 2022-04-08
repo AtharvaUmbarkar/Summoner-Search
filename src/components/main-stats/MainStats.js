@@ -10,6 +10,7 @@ import ProfileChampmastery from './ProfileChampmastery';
 import SummonerContext from '../../context/summoner/SummonerContext'
 
 const MainStats = (props) => {
+  document.body.style.height = "unset";
   const cdragon_patch = process.env.REACT_APP_CDRAGON_PATCH;
 
   const navigate = useNavigate();

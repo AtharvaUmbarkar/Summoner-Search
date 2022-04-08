@@ -21,9 +21,18 @@
 
 .nav-menu {
   position: fixed;
+  top: 0;
   transition-property: width;
   transition-duration: 100ms;
   transition-timing-function: ease-in-out;
+}
+
+.nav-menu a {
+  white-space: nowrap;
+}
+
+.nav-menu a:hover {
+  cursor: pointer;
 }
 
 .nav-menu-list {
@@ -52,7 +61,7 @@
   height: 80%;
   font-size: clamp(1rem, 2.5vw, 2.5rem);
   color: var(--clr-content-3);
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-weight: bolder;
   text-align: center;
   padding: 0 0.5rem 0 0.5rem;
@@ -75,7 +84,7 @@
   height: 100%;
   color: var(--clr-content-0);
   padding: 1rem 0 1rem 0;
-  font-family: 'Ubuntu';
+  font-family: "Ubuntu";
   text-decoration: none;
   display: flex;
   align-items: center;

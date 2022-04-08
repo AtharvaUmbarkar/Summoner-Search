@@ -58,28 +58,28 @@ const Match = (props) => {
 
       <ul className='mx-2 flex flex-row items-center justify-start my-0.5 match-items'>
         <div className='flex flex-row items-center justify-start'>
-          {match.items.slice(0, 3).map((item) => {
+          {match.items.slice(0, 3).map((item, i) => {
             if (item === 0) return (
-              <li className='bg-clrBackground-0 ml-0.5 opacity-50 rounded-[0.25rem]'>
+              <li key={i} className='bg-clrBackground-0 ml-0.5 opacity-50 rounded-[0.25rem]'>
                 <img className='match-item invisible' src={"https://ddragon.leagueoflegends.com/cdn/12.6.1/img/item/3036.png"} alt="not_found" />
               </li>
             )
             else return (
-              <li className='bg-clrBackground-0 ml-0.5 rounded-[0.25rem]'>
+              <li key={i} className='bg-clrBackground-0 ml-0.5 rounded-[0.25rem]'>
                 <img className='match-item rounded-[0.25rem]' src={`https://ddragon.leagueoflegends.com/cdn/${ddragon_patch}/img/item/${item}.png`} alt="not_found" />
               </li>
             )
           })}
         </div>
         <div className='flex flex-row items-center justify-start my-0.5'>
-          {match.items.slice(3, match.items.length).map((item) => {
+          {match.items.slice(3, match.items.length).map((item, i) => {
             if (item === 0) return (
-              <li className='bg-clrBackground-0 ml-0.5 opacity-50 rounded-[0.25rem]'>
+              <li key={i} className='bg-clrBackground-0 ml-0.5 opacity-50 rounded-[0.25rem]'>
                 <img className='match-item invisible' src={"https://ddragon.leagueoflegends.com/cdn/12.6.1/img/item/3036.png"} alt="not_found" />
               </li>
             )
             else return (
-              <li className='bg-clrBackground-0 ml-0.5 rounded-[0.25rem]'>
+              <li key={i} className='bg-clrBackground-0 ml-0.5 rounded-[0.25rem]'>
                 <img className='match-item rounded-[0.25rem]' src={`https://ddragon.leagueoflegends.com/cdn/${ddragon_patch}/img/item/${item}.png`} alt="not_found" />
               </li>
             )
